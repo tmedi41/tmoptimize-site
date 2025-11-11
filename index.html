@@ -1,0 +1,257 @@
+_<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TM Optimize — Accounting & Automation</title>
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/favicon-96x96.png">
+<meta name="theme-color" content="#F5F0E6">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600..800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TM Optimize — Accounting & Automation" />
+  <meta property="og:description" content="Smarter systems. Cleaner books. AR/AP, reconciliations, and Excel & Power Automate workflows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/screenshots/cover.png" />
+  <meta property="og:url" content="https://tmoptimize.com" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+  <img src="assets/TMOptimize_LOGO.png" alt="TM Optimize Logo" class="logo">
+</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a class="btn" href="#contact">Work With Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Accounting & Automation for Small Businesses</h1>
+          <p>AR/AP management, reconciliations, and Excel + Power Automate workflows that save hours and tighten your process.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Book a Free Consult</a>
+            <a class="link" href="#portfolio">See Portfolio</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>What I deliver</h3>
+          <ul>
+            <li>Accounts Receivable/Payable clean-up</li>
+            <li>Bank & credit card reconciliations</li>
+            <li>Excel dashboards & automation</li>
+            <li>Power Automate email reminders</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>AR/AP Management</h3>
+            <p>Invoice organization, payment posting, vendor/customer comms, and tidy aging reports.</p>
+          </article>
+          <article class="card">
+            <h3>Reconciliations</h3>
+            <p>Bank & credit card reconciliations with error detection and clean documentation.</p>
+          </article>
+          <article class="card">
+            <h3>Excel & Automation</h3>
+            <p>Dashboards, overdue flags, and automated email follow-ups via Power Automate.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section alt">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid">
+          <article class="card media">
+         <a
+  class="lightbox-trigger"
+  href="assets/ar-automation/Portfolio_AR_Automation.png"
+  data-images='[
+    "assets/ar-automation/Portfolio_AR_Automation.png",
+    "assets/ar-automation/PowerAuto.img1.png",
+    "assets/ar-automation/Reminder%20Automation.img2.png",
+    "assets/ar-automation/OutlookAutomate.img3.png"
+  ]'
+  data-captions='[
+    "Workflow overview",
+    "Excel connection + flow logic",
+    "Dynamic email template with tokens",
+    "AR Aging Excel source table"
+  ]'
+>
+  <img
+    src="assets/ar-automation/Portfolio_AR_Automation.png"
+    alt="Accounts Receivable Automation Overview"
+  />
+</a>
+
+            <div>
+              <h3>Reconciliation Toolkit</h3>
+              <p>Clean templates for bank/CC reconciliations with built-in checks for discrepancies.</p>
+              <ul class="tags"><li>Excel</li><li>Accounting</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-layout">
+        <div>
+          <h2>About Tanya</h2>
+          <p>I manage full AR/AP cycles, reconciliations, and reporting, combining QuickBooks Online, Excel, and Power Automate to streamline workflows and improve accuracy.</p>
+          <p>Clear communication, reliable delivery, and organized systems are my thing.</p>
+        </div>
+        <div class="about-badge">
+          <img src="assets/TMOptimize_LOGO.png" alt="TM Optimize Logo" class="about-logo" />
+          <div class="badge-text">Trusted Metrics • True Method</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <h2>Work With Me</h2>
+        <p>Tell me about your bookkeeping or automation goal. I’ll reply within 1 business day.</p>
+        <a class="btn" href="https://www.upwork.com/freelancers/~YOUR_UPWORK_PROFILE" target="_blank" rel="noopener">Hire via Upwork</a>
+        <!-- Or drop a simple form provider like Tally/Google Form later -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> TM Optimize</span>
+      <nav class="footer-nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!-- Lightbox modal -->
+<div id="lightbox" class="lightbox hidden" aria-hidden="true">
+  <button class="lb-btn lb-close" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" aria-label="Previous">&#10094;</button>
+
+  <figure class="lb-figure">
+    <img id="lb-image" src="" alt="">
+    <figcaption id="lb-caption"></figcaption>
+  </figure>
+
+  <button class="lb-btn lb-next" aria-label="Next">&#10095;</button>
+</div>
+
+<script>
+  (function () {
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+    const modal = document.getElementById('lightbox');
+    const imgEl = document.getElementById('lb-image');
+    const capEl = document.getElementById('lb-caption');
+    const btnClose = modal.querySelector('.lb-close');
+    const btnPrev = modal.querySelector('.lb-prev');
+    const btnNext = modal.querySelector('.lb-next');
+
+    let gallery = [];
+    let captions = [];
+    let idx = 0;
+
+    function openAt(i) {
+      idx = i;
+      imgEl.src = gallery[idx];
+      imgEl.alt = captions[idx] || '';
+      capEl.textContent = captions[idx] || '';
+      modal.classList.remove('hidden');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      modal.classList.add('hidden');
+      modal.setAttribute('aria-hidden', 'true');
+      imgEl.src = '';
+      document.body.style.overflow = '';
+    }
+
+    function prev() {
+      if (!gallery.length) return;
+      openAt((idx - 1 + gallery.length) % gallery.length);
+    }
+
+    function next() {
+      if (!gallery.length) return;
+      openAt((idx + 1) % gallery.length);
+    }
+
+    triggers.forEach((t) => {
+      t.addEventListener('click', (e) => {
+        e.preventDefault();
+        try {
+          gallery = JSON.parse(t.dataset.images || '[]');
+          captions = JSON.parse(t.dataset.captions || '[]');
+        } catch {
+          gallery = [t.getAttribute('href')];
+          captions = [''];
+        }
+        openAt(0);
+      });
+    });
+
+    btnClose.addEventListener('click', close);
+    btnPrev.addEventListener('click', prev);
+    btnNext.addEventListener('click', next);
+
+    // Close on backdrop click (but not when clicking the image/controls)
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) close();
+    });
+
+    // Keyboard controls
+    document.addEventListener('keydown', (e) => {
+      if (modal.classList.contains('hidden')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    });
+  })();
+</script>
+</body>
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => {
+    if (window.scrollY > 10) header.classList.add('shrink');
+    else header.classList.remove('shrink');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</html>

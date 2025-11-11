@@ -1,0 +1,243 @@
+:root{
+  --beige:#F5F0E6;
+  --blue:#0029FF;         /* bright royal blue like your logo */
+  --ink:#111827;
+  --ink-60:#4B5563;
+  --card:#ffffff;
+  --ring: rgba(0,41,255,0.12);
+}
+
+*{box-sizing:border-box}
+html,body{padding:0;margin:0}
+body{
+  font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--ink);
+  background:var(--beige);
+  line-height:1.6;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:linear-gradient(to bottom, rgba(245,240,230,0.95), rgba(245,240,230,0.7));
+  backdrop-filter: blur(6px);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-mark{
+  display:inline-grid;place-items:center;
+  width:36px;height:36px;border:1.5px solid var(--blue);color:var(--blue);
+  border-radius:10px;font-weight:700;letter-spacing:1px;
+}
+.brand-text{font-family:"Playfair Display",serif;font-size:18px}
+
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--ink);text-decoration:none;font-weight:500}
+.nav .btn{background:var(--blue);color:#fff;padding:10px 14px;border-radius:10px}
+.nav a:hover{opacity:.9}
+
+.hero{padding:60px 0}
+.hero-inner{
+  display:grid;gap:28px;grid-template-columns:1.2fr .8fr;align-items:center;
+}
+.hero-copy h1{
+  font-family:"Playfair Display",serif;
+  line-height:1.2;margin:0 0 10px;font-size:40px;color:var(--blue);
+}
+.hero-copy p{color:var(--ink-60);margin:0 0 18px}
+.cta{display:flex;gap:12px;align-items:center}
+.btn{
+  display:inline-block;background:var(--blue);color:#fff;text-decoration:none;
+  padding:12px 16px;border-radius:12px;font-weight:600;box-shadow:0 6px 18px var(--ring);
+}
+.link{font-weight:600;text-decoration:underline}
+
+.hero-card{
+  background:var(--card);border-radius:16px;padding:18px 18px 10px;
+  box-shadow:0 10px 30px var(--ring);border:1px solid rgba(0,0,0,0.06);
+}
+.hero-card h3{margin:0 0 10px}
+.hero-card ul{margin:0;padding-left:18px}
+
+.section{padding:56px 0}
+.section.alt{background:#fff}
+h2{
+  font-family:"Playfair Display",serif;font-size:30px;margin:0 0 18px;color:var(--blue);
+}
+
+.grid{
+  display:grid;gap:18px;
+  grid-template-columns:repeat(3,1fr);
+}
+.card{
+  background:var(--card);padding:18px;border-radius:16px;
+  border:1px solid rgba(0,0,0,0.06);box-shadow:0 8px 24px var(--ring);
+}
+.card.media{display:grid;grid-template-columns:160px 1fr;gap:14px;align-items:start}
+.card.media img{width:100%;height:auto;border-radius:12px;border:1px solid rgba(0,0,0,0.06)}
+.tags{display:flex;gap:8px;list-style:none;padding:0;margin:10px 0 0}
+.tags li{background:var(--beige);border:1px solid rgba(0,0,0,0.06);padding:4px 8px;border-radius:999px;font-size:12px}
+
+.about-layout{
+  display:grid;gap:28px;grid-template-columns:1.2fr .8fr;align-items:center;
+}
+.about-badge{
+  display:grid;gap:10px;justify-items:center;
+}
+.badge-mark{
+  display:grid;place-items:center;width:120px;height:120px;border:2px solid var(--blue);
+  border-radius:24px;color:var(--blue);font-weight:800;font-size:34px;letter-spacing:2px
+}
+.badge-text{font-size:12px;color:var(--ink-60);text-transform:uppercase;letter-spacing:.12em}
+
+.contact{text-align:center}
+.contact p{color:var(--ink-60)}
+
+.site-footer{
+  padding:24px 0;border-top:1px solid rgba(0,0,0,0.06);background:#fff;
+}
+.footer-inner{display:flex;align-items:center;justify-content:space-between}
+.footer-nav{display:flex;gap:14px}
+.footer-nav a{color:var(--ink);text-decoration:none}
+
+/* Responsive tweaks */
+@media (max-width: 900px){
+  .hero-inner, .about-layout{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .card.media{grid-template-columns:1fr}
+  .site-header{position:relative}
+}
+.logo {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin-top: -10px;  /* adjust if it sits too low */
+}
+/* ==== HEADER SHRINK + ABOUT LOGO UPDATES ==== */
+
+/* ensures links scroll correctly under sticky header */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+/* make header smaller */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(to bottom, rgba(245,240,230,0.95), rgba(245,240,230,0.7));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.header-inner{
+  padding: 8px 0; /* reduced header padding */
+}
+.logo{
+  height: 120px; /* adjust size */
+  width: auto;
+  display: block;
+  margin-top: 10px;
+}
+.nav a{
+  font-size: 15px;
+}
+.nav .btn{
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+/* when you scroll, header shrinks automatically */
+.site-header.shrink .header-inner{
+  padding: 6px 0;
+}
+.site-header.shrink .logo{
+  height: 50px;
+}
+.site-header.shrink .nav a{
+  font-size: 14px;
+}
+.site-header.shrink .nav .btn{
+  padding: 6px 10px;
+}
+
+/* about section logo */
+.about-badge{
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+.about-logo{
+  height: 115px; /* tweak between 96–128px to taste */
+  width: auto;
+  display: block;
+}
+.badge-text{
+  font-size: 12px;
+  color: var(--ink-60);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+/* ==== Mobile refinements (<=600px) ==== */
+@media (max-width: 600px){
+  .header-inner{ padding: 6px 0; }
+  .logo{ height: 44px; }
+
+  .hero{ padding: 36px 0; }
+  .hero-copy h1{ font-size: 28px; }
+  .hero-copy p{ font-size: 15px; }
+  .btn{ padding: 10px 14px; border-radius: 10px; }
+
+  .section{ padding: 40px 0; }
+  h2{ font-size: 24px; }
+
+  .grid{ grid-template-columns: 1fr; gap: 14px; }  /* stack service/portfolio cards */
+  .card.media{ grid-template-columns: 1fr; }
+
+  .about-logo{ height: 120px; } /* keep your logo readable on phones */
+}
+/* ===== Lightbox ===== */
+.lightbox.hidden { display: none; }
+.lightbox {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.78);
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 72px 1fr 72px;
+  grid-template-rows: 72px 1fr 72px;
+  align-items: center; justify-items: center;
+  padding: 12px;
+}
+
+.lb-figure {
+  grid-column: 2; grid-row: 2;
+  margin: 0; text-align: center; max-width: 90vw;
+}
+#lb-image {
+  max-width: 90vw; max-height: 78vh;
+  border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,.45);
+}
+#lb-caption {
+  color: #fff; opacity: .9; margin-top: 10px; font-size: .95rem;
+}
+
+.lb-btn {
+  background: rgba(255,255,255,.12);
+  color: #fff; border: none; width: 48px; height: 48px;
+  border-radius: 999px; cursor: pointer;
+  display: grid; place-items: center; font-size: 26px;
+  backdrop-filter: blur(4px);
+}
+.lb-btn:hover { background: rgba(255,255,255,.22); }
+
+.lb-close { grid-column: 3; grid-row: 1; align-self: start; justify-self: end; margin: 12px; font-size: 32px; }
+.lb-prev  { grid-column: 1; grid-row: 2; }
+.lb-next  { grid-column: 3; grid-row: 2; }
+
+/* Small screens */
+@media (max-width: 600px) {
+  .lightbox { grid-template-columns: 56px 1fr 56px; }
+  #lb-image { max-height: 70vh; }
+}
