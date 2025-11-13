@@ -209,6 +209,10 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   grid-template-rows: 72px 1fr 72px;
   align-items: center; justify-items: center;
   padding: 12px;
+
+  /* allow scrolling inside the lightbox */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .lb-figure {
@@ -238,6 +242,13 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* Small screens */
 @media (max-width: 600px) {
-  .lightbox { grid-template-columns: 56px 1fr 56px; }
-  #lb-image { max-height: 70vh; }
+  .lightbox { 
+    grid-template-columns: 56px 1fr 56px; 
+  }
+
+  #lb-image { 
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;   /* keeps it inside the viewport but still big */
+  }
 }
